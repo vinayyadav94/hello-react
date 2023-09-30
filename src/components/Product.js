@@ -17,7 +17,7 @@ const Product = () => {
     const {data: products, status} = useSelector(state=>state.products);
 
     useEffect(() => {
-        // dispatch an action for fetch products
+        // dispatch an action for fetch products using redux-toolkit
         dispatch(getProducts());
         //api call
         // fetch('https://fakestoreapi.com/products')
